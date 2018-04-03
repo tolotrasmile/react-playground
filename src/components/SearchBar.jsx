@@ -10,7 +10,7 @@ class SearchBar extends Component {
     return (
       <div>
         <input value={this.state.searchText}
-               onChange={(e) => this.handleChange(e)}
+               onInput={(e) => this.handleChange(e)}
                placeholder={this.state.placeholder}/>
         <p>{this.state.searchText}</p>
       </div>
@@ -18,8 +18,9 @@ class SearchBar extends Component {
   }
 
   handleChange (event) {
-    this.setState({ searchText: event.target.value })
-    console.log(this.state.searchText)
+    this.setState({ searchText: event.target.value }, () => {
+      console.log(this.state.searchText)
+    })
   }
 }
 
