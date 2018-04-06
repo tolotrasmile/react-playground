@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
-import SearchBar from './components/SearchBar'
+import React from 'react'
+import Counter from './components/Counter'
 
-class App extends Component {
-  render () {
-    return (
-      <div className="App">
-        <SearchBar/>
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <Counter />
+  )
 }
 
 export default App
