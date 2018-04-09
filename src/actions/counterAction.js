@@ -1,2 +1,2 @@
-export const increment = (count) => ({ type: 'INCREMENT', payload: count })
-export const decrement = (count) => ({ type: 'DECREMENT', payload: count })
+export const increment = (index, count) => ({ type: 'INCREMENT', payload: { index, count } })
+export const decrement = (index, count) => ({ type: 'DECREMENT', payload: { index, count } })
