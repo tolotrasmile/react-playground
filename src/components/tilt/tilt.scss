@@ -1,0 +1,13 @@
+.tilt-root {
+  background-image: linear-gradient(135deg, #ff00ba 0%, #fae713 100%);
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.tilt-child {
+  text-align: center;
+  margin: auto;
+  transform: translateZ(20px)
+}

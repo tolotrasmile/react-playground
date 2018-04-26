@@ -1,15 +1,15 @@
 import React from 'react'
-import Counter from './components/Counter'
-import Header from './components/Header'
+import NameForm from './components/form/NameForm'
+import Header from './components/header/Header'
+import Tilt from './components/tilt/Tilt'
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
-      <Counter index={0} />
-      <Counter index={1} />
-      <Counter index={2} />
-    </div>
+      <NameForm />
+      <Tilt />
+    </React.Fragment>
   )
 }
 
